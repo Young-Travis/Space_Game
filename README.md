@@ -26,7 +26,7 @@ cmake --build build -j
 Run:
 
 ```bash
-./build/SpaceFrontierTitle
+./build/SpaceGame
 ```
 
 ## Controls

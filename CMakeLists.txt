@@ -8,7 +8,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 find_package(SFML 3 COMPONENTS Graphics Window System REQUIRED)
 find_package(OpenGL REQUIRED)
 
-add_executable(SpaceFrontierTitle
+add_executable(SpaceGame
     src/main.cpp
     src/Game.cpp
     src/TitleScreen.cpp
@@ -21,9 +21,9 @@ add_executable(SpaceFrontierTitle
     src/cockpit/cockpit.cpp
 )
 
-target_include_directories(SpaceFrontierTitle PRIVATE include)
+target_include_directories(SpaceGame PRIVATE include)
 
-target_link_libraries(SpaceFrontierTitle
+target_link_libraries(SpaceGame
     PRIVATE
         SFML::Graphics
         SFML::Window
@@ -32,7 +32,7 @@ target_link_libraries(SpaceFrontierTitle
 )
 
 if(MSVC)
-    target_compile_options(SpaceFrontierTitle PRIVATE /W4)
+    target_compile_options(SpaceGame PRIVATE /W4)
 else()
-    target_compile_options(SpaceFrontierTitle PRIVATE -Wall -Wextra -Wpedantic)
+    target_compile_options(SpaceGame PRIVATE -Wall -Wextra -Wpedantic)
 endif()
