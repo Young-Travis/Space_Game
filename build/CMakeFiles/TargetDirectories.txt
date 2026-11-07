@@ -1,0 +1,3 @@
+/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceFrontierTitle/build/CMakeFiles/SpaceGame.dir
+/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceFrontierTitle/build/CMakeFiles/edit_cache.dir
+/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceFrontierTitle/build/CMakeFiles/rebuild_cache.dir
