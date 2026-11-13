@@ -10,6 +10,7 @@ SpaceGame: \
   CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o \
   CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o \
   CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o \
+  CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o \
   CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o \
   CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o \
   /usr/lib/libsfml-graphics.so.3.1.0 \
@@ -108,6 +109,8 @@ CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o:
 CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o:
 
 CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o:
+
+CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o:
 
 CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o:
 

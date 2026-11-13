@@ -1,8 +1,8 @@
 CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o: \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/src/ships/Enemy.cpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/ships/Enemy.cpp \
  /usr/include/stdc-predef.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/ships/Enemy.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Math/Vector3.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Enemy.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Vector3.hpp \
  /usr/include/c++/16/cmath /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -72,7 +72,7 @@ CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o: \
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
  /usr/include/c++/16/tr1/riemann_zeta.tcc \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/Mesh.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Mesh.hpp \
  /usr/include/c++/16/vector /usr/include/c++/16/bits/allocator.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h \
  /usr/include/c++/16/bits/new_allocator.h /usr/include/c++/16/new \
@@ -95,4 +95,4 @@ CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o: \
  /usr/include/c++/16/bits/uses_allocator.h \
  /usr/include/c++/16/bits/uses_allocator_args.h /usr/include/c++/16/tuple \
  /usr/include/c++/16/bits/invoke.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/ships/Ship.hpp
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Ship.hpp

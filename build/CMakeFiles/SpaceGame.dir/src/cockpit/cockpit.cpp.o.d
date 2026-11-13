@@ -1,9 +1,9 @@
 CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o: \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/src/cockpit/cockpit.cpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/cockpit/cockpit.cpp \
  /usr/include/stdc-predef.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/cockpit/Cockpit.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/Mesh.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Math/Vector3.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/cockpit/Cockpit.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Mesh.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Vector3.hpp \
  /usr/include/c++/16/cmath /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \

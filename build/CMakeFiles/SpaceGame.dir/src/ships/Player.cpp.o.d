@@ -1,8 +1,9 @@
-CMakeFiles/SpaceFrontierTitle.dir/src/ships/Enemy.cpp.o: \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/src/ships/Enemy.cpp \
+CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o: \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/ships/Player.cpp \
  /usr/include/stdc-predef.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/ships/Enemy.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Math/Vector3.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Player.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Quaternion.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Vector3.hpp \
  /usr/include/c++/16/cmath /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -71,28 +72,14 @@ CMakeFiles/SpaceFrontierTitle.dir/src/ships/Enemy.cpp.o: \
  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
- /usr/include/c++/16/tr1/riemann_zeta.tcc \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/Mesh.hpp \
- /usr/include/c++/16/vector /usr/include/c++/16/bits/allocator.h \
- /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h \
- /usr/include/c++/16/bits/new_allocator.h /usr/include/c++/16/new \
+ /usr/include/c++/16/tr1/riemann_zeta.tcc /usr/include/c++/16/algorithm \
+ /usr/include/c++/16/bits/stl_algo.h \
+ /usr/include/c++/16/bits/algorithmfwd.h \
+ /usr/include/c++/16/initializer_list /usr/include/c++/16/bits/stl_heap.h \
+ /usr/include/c++/16/bits/uniform_int_dist.h \
+ /usr/include/c++/16/bits/stl_tempbuf.h /usr/include/c++/16/new \
  /usr/include/c++/16/bits/exception.h \
  /usr/include/c++/16/bits/new_except.h \
- /usr/include/c++/16/bits/new_throw.h \
- /usr/include/c++/16/bits/memoryfwd.h \
- /usr/include/c++/16/bits/stl_construct.h \
- /usr/include/c++/16/bits/stl_uninitialized.h \
- /usr/include/c++/16/ext/alloc_traits.h \
- /usr/include/c++/16/bits/alloc_traits.h \
- /usr/include/c++/16/bits/stl_vector.h \
- /usr/include/c++/16/initializer_list \
- /usr/include/c++/16/bits/stl_bvector.h \
- /usr/include/c++/16/bits/functional_hash.h \
- /usr/include/c++/16/bits/hash_bytes.h \
- /usr/include/c++/16/bits/range_access.h \
- /usr/include/c++/16/bits/erase_if.h /usr/include/c++/16/bits/vector.tcc \
- /usr/include/c++/16/bits/memory_resource.h /usr/include/c++/16/cstddef \
- /usr/include/c++/16/bits/uses_allocator.h \
- /usr/include/c++/16/bits/uses_allocator_args.h /usr/include/c++/16/tuple \
- /usr/include/c++/16/bits/invoke.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/ships/Ship.hpp
+ /usr/include/c++/16/bits/stl_construct.h /usr/include/c++/16/cstdlib \
+ /usr/include/c++/16/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/16/pstl/execution_defs.h

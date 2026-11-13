@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(SpaceFrontierTitle VERSION 1.0.0 LANGUAGES CXX)
+project(SpaceGame VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -17,6 +17,7 @@ add_executable(SpaceGame
     src/graphics/GpuRenderer.cpp
     src/graphics/Starfield.cpp
     src/ships/Enemy.cpp
+    src/ships/Player.cpp
     src/ships/Ship.cpp
     src/cockpit/cockpit.cpp
 )

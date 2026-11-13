@@ -65,37 +65,40 @@ void Game::run() {
             constexpr float throttleChangeRate = 0.75f;
             const float turnAmount = turnSpeed * deltaTime;
             const float throttleAmount = throttleChangeRate * deltaTime;
+            player.update(deltaTime);
 
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A)) {
-                shipOrientation.rotateLocal({0.0f, 0.0f, 1.0f}, turnAmount);
+                player.roll(turnAmount);
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D)) {
-                shipOrientation.rotateLocal({0.0f, 0.0f, 1.0f}, -turnAmount);
+                player.roll(-turnAmount);
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Q)) {
-                shipOrientation.rotateLocal({0.0f, 1.0f, 0.0f}, turnAmount);
+                player.yaw(turnAmount);
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)) {
-                shipOrientation.rotateLocal({0.0f, 1.0f, 0.0f}, -turnAmount);
+                player.yaw(-turnAmount);
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)) {
-                shipOrientation.rotateLocal({1.0f, 0.0f, 0.0f}, -turnAmount);
+                player.pitch(-turnAmount);
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S)) {
-                shipOrientation.rotateLocal({1.0f, 0.0f, 0.0f}, turnAmount);
+                player.pitch(turnAmount);
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
-                throttle += throttleAmount;
+                player.thrust(throttleAmount);
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down)) {
-                throttle -= throttleAmount;
+                player.thrust(-throttleAmount);
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)) {
+                static_cast<void>(player.shoot());
             }
 
-            throttle = std::clamp(throttle, -1.0f, 1.0f);
             const Vector3 playerDisplacement = starfield->update(
                 deltaTime,
-                throttle,
-                shipOrientation
+                player.getThrottle(),
+                player.getOrientation()
             );
 
             for (Enemy& enemy : enemies) {
@@ -138,7 +141,7 @@ void Game::run() {
                 gpuRenderer.beginCockpitView(cameraDistance);
                 gpuRenderer.drawMeshDepth(cockpit->getMesh());
 
-                gpuRenderer.beginWorldView(cameraDistance, shipOrientation);
+                gpuRenderer.beginWorldView(cameraDistance, player.getOrientation());
                 for (const Enemy& enemy : enemies) {
                     gpuRenderer.drawMeshDepth(
                         enemy.getMesh(),
@@ -180,7 +183,7 @@ void Game::spawnEnemy() {
         -distance(enemyRandom)
     };
     enemies.emplace_back(
-        shipOrientation.rotateVector(localPosition),
+        player.getOrientation().rotateVector(localPosition),
         ENEMY_LIFETIME
     );
 }

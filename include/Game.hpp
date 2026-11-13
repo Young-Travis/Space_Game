@@ -6,6 +6,7 @@
 #include "Math/Quaternion.hpp"
 #include "cockpit/Cockpit.hpp"
 #include "ships/Enemy.hpp"
+#include "ships/Player.hpp"
 
 #include <SFML/Graphics/RenderWindow.hpp>
 
@@ -30,8 +31,7 @@ private:
     std::optional<Starfield> starfield;
     std::vector<Enemy> enemies;
     GpuRenderer gpuRenderer;
-    Quaternion shipOrientation;
-    float throttle{};
+    Player player;
     float enemySpawnTimer{};
     std::mt19937 enemyRandom{1984};
     State state{State::Title};

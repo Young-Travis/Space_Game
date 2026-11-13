@@ -1,10 +1,10 @@
 CMakeFiles/SpaceGame.dir/src/main.cpp.o: \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/src/main.cpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/main.cpp \
  /usr/include/stdc-predef.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Game.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/TitleScreen.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/Mesh.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Math/Vector3.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Game.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/TitleScreen.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Mesh.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Vector3.hpp \
  /usr/include/c++/16/cmath /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -96,8 +96,8 @@ CMakeFiles/SpaceGame.dir/src/main.cpp.o: \
  /usr/include/c++/16/bits/uses_allocator.h \
  /usr/include/c++/16/bits/uses_allocator_args.h /usr/include/c++/16/tuple \
  /usr/include/c++/16/bits/invoke.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/Renderer3D.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/Mesh.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Renderer3D.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Mesh.hpp \
  /usr/include/SFML/Graphics/RenderTarget.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/BlendMode.hpp \
@@ -251,17 +251,18 @@ CMakeFiles/SpaceGame.dir/src/main.cpp.o: \
  /usr/include/SFML/Graphics/Transformable.hpp \
  /usr/include/SFML/Graphics/VertexArray.hpp \
  /usr/include/c++/16/functional /usr/include/c++/16/bits/std_function.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/ships/Ship.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/GpuRenderer.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Math/Quaternion.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/Starfield.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/Renderer3D.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Ship.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/GpuRenderer.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Quaternion.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Starfield.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Renderer3D.hpp \
  /usr/include/c++/16/random /usr/include/c++/16/bits/random.h \
  /usr/include/c++/16/bits/uniform_int_dist.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/opt_random.h \
  /usr/include/c++/16/bits/random.tcc /usr/include/c++/16/numeric \
  /usr/include/c++/16/bits/stl_numeric.h \
  /usr/include/c++/16/pstl/glue_numeric_defs.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Math/Quaternion.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/cockpit/Cockpit.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/ships/Enemy.hpp
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Quaternion.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/cockpit/Cockpit.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Enemy.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Player.hpp

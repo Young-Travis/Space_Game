@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceFrontierTitle"
+CMAKE_SOURCE_DIR = "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceFrontierTitle/build"
+CMAKE_BINARY_DIR = "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceFrontierTitle/build/CMakeFiles" "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceFrontierTitle/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceFrontierTitle/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -345,6 +345,30 @@ src/ships/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.s
 .PHONY : src/ships/Enemy.cpp.s
 
+src/ships/Player.o: src/ships/Player.cpp.o
+.PHONY : src/ships/Player.o
+
+# target to build an object file
+src/ships/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o
+.PHONY : src/ships/Player.cpp.o
+
+src/ships/Player.i: src/ships/Player.cpp.i
+.PHONY : src/ships/Player.i
+
+# target to preprocess a source file
+src/ships/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.i
+.PHONY : src/ships/Player.cpp.i
+
+src/ships/Player.s: src/ships/Player.cpp.s
+.PHONY : src/ships/Player.s
+
+# target to generate assembly for a file
+src/ships/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.s
+.PHONY : src/ships/Player.cpp.s
+
 src/ships/Ship.o: src/ships/Ship.cpp.o
 .PHONY : src/ships/Ship.o
 
@@ -405,6 +429,9 @@ help:
 	@echo "... src/ships/Enemy.o"
 	@echo "... src/ships/Enemy.i"
 	@echo "... src/ships/Enemy.s"
+	@echo "... src/ships/Player.o"
+	@echo "... src/ships/Player.i"
+	@echo "... src/ships/Player.s"
 	@echo "... src/ships/Ship.o"
 	@echo "... src/ships/Ship.i"
 	@echo "... src/ships/Ship.s"

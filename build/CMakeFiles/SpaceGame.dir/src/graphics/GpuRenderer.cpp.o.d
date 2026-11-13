@@ -1,9 +1,9 @@
 CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o: \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/src/graphics/GpuRenderer.cpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/graphics/GpuRenderer.cpp \
  /usr/include/stdc-predef.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/GpuRenderer.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Graphics/Mesh.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Math/Vector3.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/GpuRenderer.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Mesh.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Vector3.hpp \
  /usr/include/c++/16/cmath /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -95,7 +95,7 @@ CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o: \
  /usr/include/c++/16/bits/uses_allocator.h \
  /usr/include/c++/16/bits/uses_allocator_args.h /usr/include/c++/16/tuple \
  /usr/include/c++/16/bits/invoke.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceFrontierTitle/include/Math/Quaternion.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Quaternion.hpp \
  /usr/include/SFML/Graphics/Color.hpp /usr/include/c++/16/cstdint \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \

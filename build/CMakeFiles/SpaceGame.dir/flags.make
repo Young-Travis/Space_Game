@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceFrontierTitle/include"
+CXX_INCLUDES = -I"/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/include"
 
 CXX_FLAGS = -std=c++17 -Wall -Wextra -Wpedantic
 

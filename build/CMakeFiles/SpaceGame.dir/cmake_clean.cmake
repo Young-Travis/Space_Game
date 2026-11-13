@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SpaceGame.dir/src/main.cpp.o.d"
   "CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o"
   "CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o.d"
+  "CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o"
+  "CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o.d"
   "CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o"
   "CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o.d"
   "SpaceGame"
