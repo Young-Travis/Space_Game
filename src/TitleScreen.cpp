@@ -13,8 +13,13 @@ constexpr float PI = 3.14159265358979323846f;
 }
 
 TitleScreen::TitleScreen() : fighter(), renderer(WINDOW_WIDTH, WINDOW_HEIGHT) {
-    //get the font
     fontLoaded = font.openFromFile("src/font.ttf");
+    if (!fontLoaded) {
+        fontLoaded = font.openFromFile("../src/font.ttf");
+    }
+    if (!fontLoaded) {
+        fontLoaded = font.openFromFile("font.ttf");
+    }
 
     if (fontLoaded) {
         menuText.emplace_back(font, "PLAY", 30);
@@ -76,9 +81,7 @@ void TitleScreen::updateMenuText() {
     for (std::size_t i = 0; i < menuText.size(); ++i) {
         const bool selected = i == selectedOption;
 
-        menuText[i].setFillColor(
-            selected ? sf::Color::White : sf::Color(115, 120, 130)
-        );
+        menuText[i].setFillColor(selected ? sf::Color::White : sf::Color(115, 120, 130));
 
         menuText[i].setPosition({
             0.0f,
@@ -123,16 +126,7 @@ void TitleScreen::render(sf::RenderWindow& window) {
     }
 
     // Render the ship
-    renderer.drawMesh(
-        window,
-        fighter.getMesh(),
-        yaw,
-        pitch,
-        roll,
-        {640.0f, 330.0f},
-        0.82f,
-        3.0f
-    );
+    renderer.drawMesh(window, fighter.getMesh(), yaw, pitch, roll, {640.0f, 330.0f}, 0.82f, 3.0f);
 
     if (fontLoaded) {
         for (std::size_t i = 0; i < menuText.size(); ++i) {
@@ -149,11 +143,7 @@ void TitleScreen::render(sf::RenderWindow& window) {
             window.draw(menuText[i]);
         }
 
-        sf::Text instructions(
-            font,
-            "USE UP / DOWN TO SELECT    ENTER TO CONFIRM",
-            12
-        );
+        sf::Text instructions(font, "USE UP / DOWN TO SELECT    ENTER TO CONFIRM", 12);
         instructions.setLetterSpacing(1.0f);
         instructions.setFillColor(sf::Color(90, 95, 108));
 
@@ -167,6 +157,12 @@ void TitleScreen::render(sf::RenderWindow& window) {
     }
 
     window.display();
+}
+
+void TitleScreen::reset() {
+    result = Result::None;
+    selectedOption = 0;
+    updateMenuText();
 }
 
 TitleScreen::Result TitleScreen::getResult() const {

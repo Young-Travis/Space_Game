@@ -6,7 +6,7 @@
 #include <random>
 
 namespace {
-constexpr std::size_t STAR_COUNT = 1600;
+constexpr std::size_t STAR_COUNT = 700;
 constexpr float MAX_STAR_SPEED = 30.0f;
 constexpr float STAR_FIELD_DISTANCE = 180.0f;
 constexpr float MIN_STAR_DISTANCE = 25.0f;
@@ -24,16 +24,10 @@ const std::vector<Vector3>& Starfield::getStars() const {
     return stars;
 }
 
-Vector3 Starfield::createStar(
-    const Quaternion& shipOrientation,
-    bool aheadOfShip
-) {
+Vector3 Starfield::createStar(const Quaternion& shipOrientation, bool aheadOfShip) {
     const float minimumZDirection = aheadOfShip ? -1.0f : -1.0f;
     const float maximumZDirection = aheadOfShip ? -0.5f : 1.0f;
-    std::uniform_real_distribution<float> zDirection(
-        minimumZDirection,
-        maximumZDirection
-    );
+    std::uniform_real_distribution<float> zDirection(minimumZDirection, maximumZDirection);
     std::uniform_real_distribution<float> azimuth(0.0f, TWO_PI);
     std::uniform_real_distribution<float> radius(90.0f, 150.0f);
 
@@ -55,11 +49,7 @@ Vector3 Starfield::createStar(
     return star;
 }
 
-Vector3 Starfield::update(
-    float deltaTime,
-    float throttle,
-    const Quaternion& shipOrientation
-) {
+Vector3 Starfield::update(float deltaTime, float throttle, const Quaternion& shipOrientation) {
     const Vector3 forward = shipOrientation.rotateVector({0.0f, 0.0f, -1.0f});
     const Vector3 displacement = forward * (throttle * MAX_STAR_SPEED * deltaTime);
 
@@ -82,26 +72,13 @@ Vector3 Starfield::update(
     return displacement;
 }
 
-void Starfield::render(
-    sf::RenderTarget& target,
-    const Renderer3D& renderer,
-    const Renderer3D::DepthBuffer& depthBuffer,
-    const sf::Vector2f& screenCenter,
-    float scale,
-    float cameraDistance,
-    const Quaternion& shipOrientation
-) const {
+void Starfield::render(sf::RenderTarget& target, const Renderer3D& renderer, const Renderer3D::DepthBuffer& depthBuffer, const sf::Vector2f& screenCenter, float scale, float cameraDistance, const Quaternion& shipOrientation) const {
     std::vector<sf::Vertex> visibleStars;
     visibleStars.reserve(stars.size());
 
     for (const Vector3& star : stars) {
         const Vector3 viewStar = shipOrientation.inverse().rotateVector(star);
-        const Renderer3D::ProjectedPoint projected = renderer.projectPoint(
-            viewStar,
-            screenCenter,
-            scale,
-            cameraDistance
-        );
+        const Renderer3D::ProjectedPoint projected = renderer.projectPoint(viewStar, screenCenter, scale, cameraDistance);
 
         if (!projected.visible ||
             !depthBuffer.isPointVisible(projected.position, projected.depth)) {
@@ -115,10 +92,6 @@ void Starfield::render(
     }
 
     if (!visibleStars.empty()) {
-        target.draw(
-            visibleStars.data(),
-            visibleStars.size(),
-            sf::PrimitiveType::Points
-        );
+        target.draw(visibleStars.data(), visibleStars.size(), sf::PrimitiveType::Points);
     }
 }

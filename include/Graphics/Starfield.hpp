@@ -17,15 +17,7 @@ public:
 
     const std::vector<Vector3>& getStars() const;
 
-    void render(
-        sf::RenderTarget& target,
-        const Renderer3D& renderer,
-        const Renderer3D::DepthBuffer& depthBuffer,
-        const sf::Vector2f& screenCenter,
-        float scale,
-        float cameraDistance,
-        const Quaternion& shipOrientation
-    ) const;
+    void render(sf::RenderTarget& target, const Renderer3D& renderer, const Renderer3D::DepthBuffer& depthBuffer, const sf::Vector2f& screenCenter, float scale, float cameraDistance, const Quaternion& shipOrientation) const;
 
 private:
     Vector3 createStar(const Quaternion& shipOrientation, bool aheadOfShip);

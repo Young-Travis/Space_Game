@@ -2,10 +2,12 @@ CMakeFiles/SpaceGame.dir/src/Game.cpp.o: \
  /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/Game.cpp \
  /usr/include/stdc-predef.h \
  /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Game.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/TitleScreen.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Mesh.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Vector3.hpp \
- /usr/include/c++/16/cmath /usr/include/c++/16/bits/requires_hosted.h \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/GameOverScreen.hpp \
+ /usr/include/SFML/Graphics/Font.hpp \
+ /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
+ /usr/include/SFML/Graphics/Glyph.hpp /usr/include/SFML/Graphics/Rect.hpp \
+ /usr/include/SFML/System/Vector2.hpp /usr/include/SFML/System/Angle.hpp \
+ /usr/include/SFML/System/Angle.inl /usr/include/c++/16/cassert \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,9 +15,10 @@ CMakeFiles/SpaceGame.dir/src/Game.cpp.o: \
  /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/include/c++/16/pstl/pstl_config.h \
+ /usr/include/c++/16/pstl/pstl_config.h /usr/include/assert.h \
+ /usr/include/c++/16/type_traits /usr/include/c++/16/bits/version.h \
+ /usr/include/c++/16/cmath /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/bits/cpp_type_traits.h \
- /usr/include/c++/16/bits/version.h /usr/include/c++/16/type_traits \
  /usr/include/c++/16/ext/type_traits.h /usr/include/math.h \
  /usr/include/bits/libc-header-start.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h /usr/include/bits/floatn.h \
@@ -73,68 +76,43 @@ CMakeFiles/SpaceGame.dir/src/Game.cpp.o: \
  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
- /usr/include/c++/16/tr1/riemann_zeta.tcc /usr/include/c++/16/vector \
+ /usr/include/c++/16/tr1/riemann_zeta.tcc \
+ /usr/include/SFML/System/Vector2.inl /usr/include/c++/16/optional \
+ /usr/include/c++/16/exception /usr/include/c++/16/bits/exception.h \
+ /usr/include/c++/16/bits/exception_ptr.h \
+ /usr/include/c++/16/bits/cxxabi_init_exception.h \
+ /usr/include/c++/16/typeinfo /usr/include/c++/16/bits/hash_bytes.h \
+ /usr/include/c++/16/new /usr/include/c++/16/bits/new_except.h \
+ /usr/include/c++/16/bits/nested_exception.h \
+ /usr/include/c++/16/initializer_list \
+ /usr/include/c++/16/bits/enable_special_members.h \
+ /usr/include/c++/16/bits/functional_hash.h \
+ /usr/include/c++/16/bits/stl_construct.h \
+ /usr/include/SFML/Graphics/Rect.inl \
+ /usr/include/SFML/Graphics/Texture.hpp \
+ /usr/include/SFML/Graphics/CoordinateType.hpp \
+ /usr/include/SFML/Window/GlResource.hpp \
+ /usr/include/SFML/Window/Export.hpp /usr/include/c++/16/memory \
+ /usr/include/c++/16/bits/memoryfwd.h \
  /usr/include/c++/16/bits/allocator.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h \
- /usr/include/c++/16/bits/new_allocator.h /usr/include/c++/16/new \
- /usr/include/c++/16/bits/exception.h \
- /usr/include/c++/16/bits/new_except.h \
+ /usr/include/c++/16/bits/new_allocator.h \
  /usr/include/c++/16/bits/new_throw.h \
- /usr/include/c++/16/bits/memoryfwd.h \
- /usr/include/c++/16/bits/stl_construct.h \
+ /usr/include/c++/16/bits/stl_tempbuf.h \
  /usr/include/c++/16/bits/stl_uninitialized.h \
  /usr/include/c++/16/ext/alloc_traits.h \
  /usr/include/c++/16/bits/alloc_traits.h \
- /usr/include/c++/16/bits/stl_vector.h \
- /usr/include/c++/16/initializer_list \
- /usr/include/c++/16/bits/stl_bvector.h \
- /usr/include/c++/16/bits/functional_hash.h \
- /usr/include/c++/16/bits/hash_bytes.h \
- /usr/include/c++/16/bits/range_access.h \
- /usr/include/c++/16/bits/erase_if.h /usr/include/c++/16/bits/vector.tcc \
- /usr/include/c++/16/bits/memory_resource.h /usr/include/c++/16/cstddef \
- /usr/include/c++/16/bits/uses_allocator.h \
- /usr/include/c++/16/bits/uses_allocator_args.h /usr/include/c++/16/tuple \
- /usr/include/c++/16/bits/invoke.h \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Renderer3D.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Mesh.hpp \
- /usr/include/SFML/Graphics/RenderTarget.hpp \
- /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
- /usr/include/SFML/Graphics/BlendMode.hpp \
- /usr/include/SFML/Graphics/Color.hpp /usr/include/c++/16/cstdint \
- /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h \
- /usr/include/bits/stdint-uintn.h /usr/include/bits/stdint-least.h \
- /usr/include/SFML/Graphics/Color.inl \
- /usr/include/SFML/Graphics/CoordinateType.hpp \
- /usr/include/SFML/Graphics/PrimitiveType.hpp \
- /usr/include/SFML/Graphics/Rect.hpp /usr/include/SFML/System/Vector2.hpp \
- /usr/include/SFML/System/Angle.hpp /usr/include/SFML/System/Angle.inl \
- /usr/include/c++/16/cassert /usr/include/assert.h \
- /usr/include/SFML/System/Vector2.inl /usr/include/c++/16/optional \
- /usr/include/c++/16/exception /usr/include/c++/16/bits/exception_ptr.h \
- /usr/include/c++/16/bits/cxxabi_init_exception.h \
- /usr/include/c++/16/typeinfo /usr/include/c++/16/bits/nested_exception.h \
- /usr/include/c++/16/bits/enable_special_members.h \
- /usr/include/SFML/Graphics/Rect.inl \
- /usr/include/SFML/Graphics/RenderStates.hpp \
- /usr/include/SFML/Graphics/StencilMode.hpp \
- /usr/include/SFML/Graphics/Transform.hpp /usr/include/c++/16/array \
- /usr/include/c++/16/compare /usr/include/SFML/Graphics/Transform.inl \
- /usr/include/SFML/Graphics/Vertex.hpp \
- /usr/include/SFML/Graphics/View.hpp /usr/include/SFML/Graphics/Font.hpp \
- /usr/include/SFML/Graphics/Glyph.hpp \
- /usr/include/SFML/Graphics/Texture.hpp \
- /usr/include/SFML/Window/GlResource.hpp \
- /usr/include/SFML/Window/Export.hpp /usr/include/c++/16/memory \
- /usr/include/c++/16/bits/stl_tempbuf.h \
  /usr/include/c++/16/bits/stl_raw_storage_iter.h \
- /usr/include/c++/16/bits/align.h /usr/include/c++/16/bits/unique_ptr.h \
- /usr/include/c++/16/bits/shared_ptr.h /usr/include/c++/16/iosfwd \
- /usr/include/c++/16/bits/stringfwd.h /usr/include/c++/16/bits/postypes.h \
- /usr/include/c++/16/cwchar /usr/include/wchar.h \
+ /usr/include/c++/16/bits/align.h \
+ /usr/include/c++/16/bits/uses_allocator.h \
+ /usr/include/c++/16/bits/unique_ptr.h /usr/include/c++/16/tuple \
+ /usr/include/c++/16/bits/invoke.h /usr/include/c++/16/bits/shared_ptr.h \
+ /usr/include/c++/16/iosfwd /usr/include/c++/16/bits/stringfwd.h \
+ /usr/include/c++/16/bits/postypes.h /usr/include/c++/16/cwchar \
+ /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
+ /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h \
  /usr/include/c++/16/bits/shared_ptr_base.h \
@@ -179,6 +157,8 @@ CMakeFiles/SpaceGame.dir/src/Game.cpp.o: \
  /usr/include/bits/locale.h /usr/include/c++/16/cctype \
  /usr/include/ctype.h /usr/include/c++/16/bits/ostream_insert.h \
  /usr/include/c++/16/bits/cxxabi_forced.h \
+ /usr/include/c++/16/bits/range_access.h \
+ /usr/include/c++/16/bits/erase_if.h \
  /usr/include/c++/16/bits/basic_string.h /usr/include/c++/16/string_view \
  /usr/include/c++/16/bits/string_view.tcc \
  /usr/include/c++/16/ext/string_conversions.h /usr/include/c++/16/cstdlib \
@@ -188,9 +168,14 @@ CMakeFiles/SpaceGame.dir/src/Game.cpp.o: \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/c++/16/bits/charconv.h \
  /usr/include/c++/16/bits/basic_string.tcc \
- /usr/include/c++/16/bits/stdexcept_except.h \
- /usr/include/c++/16/bits/chrono.h /usr/include/c++/16/ratio \
- /usr/include/c++/16/ctime /usr/include/c++/16/bits/parse_numbers.h \
+ /usr/include/c++/16/bits/memory_resource.h /usr/include/c++/16/cstddef \
+ /usr/include/c++/16/bits/uses_allocator_args.h \
+ /usr/include/c++/16/bits/stdexcept_except.h /usr/include/c++/16/cstdint \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h /usr/include/c++/16/bits/chrono.h \
+ /usr/include/c++/16/ratio /usr/include/c++/16/ctime \
+ /usr/include/c++/16/bits/parse_numbers.h \
  /usr/include/c++/16/bits/fs_path.h /usr/include/c++/16/locale \
  /usr/include/c++/16/bits/locale_classes.h \
  /usr/include/c++/16/bits/functexcept.h \
@@ -223,8 +208,22 @@ CMakeFiles/SpaceGame.dir/src/Game.cpp.o: \
  /usr/include/c++/16/bits/unordered_map.h \
  /usr/include/c++/16/bits/hashtable.h \
  /usr/include/c++/16/bits/hashtable_policy.h \
- /usr/include/c++/16/bits/node_handle.h \
+ /usr/include/c++/16/bits/node_handle.h /usr/include/c++/16/vector \
+ /usr/include/c++/16/bits/stl_vector.h \
+ /usr/include/c++/16/bits/stl_bvector.h \
+ /usr/include/c++/16/bits/vector.tcc \
  /usr/include/SFML/Graphics/RenderWindow.hpp \
+ /usr/include/SFML/Graphics/RenderTarget.hpp \
+ /usr/include/SFML/Graphics/BlendMode.hpp \
+ /usr/include/SFML/Graphics/Color.hpp \
+ /usr/include/SFML/Graphics/Color.inl \
+ /usr/include/SFML/Graphics/PrimitiveType.hpp \
+ /usr/include/SFML/Graphics/RenderStates.hpp \
+ /usr/include/SFML/Graphics/StencilMode.hpp \
+ /usr/include/SFML/Graphics/Transform.hpp /usr/include/c++/16/array \
+ /usr/include/c++/16/compare /usr/include/SFML/Graphics/Transform.inl \
+ /usr/include/SFML/Graphics/Vertex.hpp \
+ /usr/include/SFML/Graphics/View.hpp \
  /usr/include/SFML/Window/ContextSettings.hpp \
  /usr/include/SFML/Window/VideoMode.hpp \
  /usr/include/SFML/Window/Window.hpp \
@@ -251,9 +250,16 @@ CMakeFiles/SpaceGame.dir/src/Game.cpp.o: \
  /usr/include/SFML/Graphics/Transformable.hpp \
  /usr/include/SFML/Graphics/VertexArray.hpp \
  /usr/include/c++/16/functional /usr/include/c++/16/bits/std_function.h \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/TitleScreen.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Mesh.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Vector3.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Renderer3D.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Mesh.hpp \
  /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Ship.hpp \
  /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/GpuRenderer.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/ParticleExplosion.hpp \
  /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Quaternion.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/ParticleExplosion.hpp \
  /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Starfield.hpp \
  /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/Renderer3D.hpp \
  /usr/include/c++/16/random /usr/include/c++/16/bits/random.h \
@@ -263,9 +269,16 @@ CMakeFiles/SpaceGame.dir/src/Game.cpp.o: \
  /usr/include/c++/16/bits/stl_numeric.h \
  /usr/include/c++/16/pstl/glue_numeric_defs.h \
  /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Math/Quaternion.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Enemy.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Laser.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/StudentPlayer.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Player.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/Graphics/GpuRenderer.hpp \
  /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/cockpit/Cockpit.hpp \
  /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Enemy.hpp \
- /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Player.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/Laser.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/StudentEnemy.hpp \
+ /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/include/ships/StudentLaser.hpp \
  /usr/include/c++/16/algorithm /usr/include/c++/16/bits/stl_algo.h \
  /usr/include/c++/16/bits/algorithmfwd.h \
  /usr/include/c++/16/bits/stl_heap.h \

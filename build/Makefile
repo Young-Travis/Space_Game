@@ -153,6 +153,30 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/GameOverScreen.o: src/GameOverScreen.cpp.o
+.PHONY : src/GameOverScreen.o
+
+# target to build an object file
+src/GameOverScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o
+.PHONY : src/GameOverScreen.cpp.o
+
+src/GameOverScreen.i: src/GameOverScreen.cpp.i
+.PHONY : src/GameOverScreen.i
+
+# target to preprocess a source file
+src/GameOverScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.i
+.PHONY : src/GameOverScreen.cpp.i
+
+src/GameOverScreen.s: src/GameOverScreen.cpp.s
+.PHONY : src/GameOverScreen.s
+
+# target to generate assembly for a file
+src/GameOverScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.s
+.PHONY : src/GameOverScreen.cpp.s
+
 src/TitleScreen.o: src/TitleScreen.cpp.o
 .PHONY : src/TitleScreen.o
 
@@ -248,6 +272,30 @@ src/graphics/Mesh.s: src/graphics/Mesh.cpp.s
 src/graphics/Mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.s
 .PHONY : src/graphics/Mesh.cpp.s
+
+src/graphics/ParticleExplosion.o: src/graphics/ParticleExplosion.cpp.o
+.PHONY : src/graphics/ParticleExplosion.o
+
+# target to build an object file
+src/graphics/ParticleExplosion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o
+.PHONY : src/graphics/ParticleExplosion.cpp.o
+
+src/graphics/ParticleExplosion.i: src/graphics/ParticleExplosion.cpp.i
+.PHONY : src/graphics/ParticleExplosion.i
+
+# target to preprocess a source file
+src/graphics/ParticleExplosion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.i
+.PHONY : src/graphics/ParticleExplosion.cpp.i
+
+src/graphics/ParticleExplosion.s: src/graphics/ParticleExplosion.cpp.s
+.PHONY : src/graphics/ParticleExplosion.s
+
+# target to generate assembly for a file
+src/graphics/ParticleExplosion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.s
+.PHONY : src/graphics/ParticleExplosion.cpp.s
 
 src/graphics/Renderer3D.o: src/graphics/Renderer3D.cpp.o
 .PHONY : src/graphics/Renderer3D.o
@@ -345,6 +393,30 @@ src/ships/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.s
 .PHONY : src/ships/Enemy.cpp.s
 
+src/ships/Laser.o: src/ships/Laser.cpp.o
+.PHONY : src/ships/Laser.o
+
+# target to build an object file
+src/ships/Laser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o
+.PHONY : src/ships/Laser.cpp.o
+
+src/ships/Laser.i: src/ships/Laser.cpp.i
+.PHONY : src/ships/Laser.i
+
+# target to preprocess a source file
+src/ships/Laser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.i
+.PHONY : src/ships/Laser.cpp.i
+
+src/ships/Laser.s: src/ships/Laser.cpp.s
+.PHONY : src/ships/Laser.s
+
+# target to generate assembly for a file
+src/ships/Laser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.s
+.PHONY : src/ships/Laser.cpp.s
+
 src/ships/Player.o: src/ships/Player.cpp.o
 .PHONY : src/ships/Player.o
 
@@ -393,6 +465,78 @@ src/ships/Ship.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.s
 .PHONY : src/ships/Ship.cpp.s
 
+src/ships/StudentEnemy.o: src/ships/StudentEnemy.cpp.o
+.PHONY : src/ships/StudentEnemy.o
+
+# target to build an object file
+src/ships/StudentEnemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o
+.PHONY : src/ships/StudentEnemy.cpp.o
+
+src/ships/StudentEnemy.i: src/ships/StudentEnemy.cpp.i
+.PHONY : src/ships/StudentEnemy.i
+
+# target to preprocess a source file
+src/ships/StudentEnemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.i
+.PHONY : src/ships/StudentEnemy.cpp.i
+
+src/ships/StudentEnemy.s: src/ships/StudentEnemy.cpp.s
+.PHONY : src/ships/StudentEnemy.s
+
+# target to generate assembly for a file
+src/ships/StudentEnemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.s
+.PHONY : src/ships/StudentEnemy.cpp.s
+
+src/ships/StudentLaser.o: src/ships/StudentLaser.cpp.o
+.PHONY : src/ships/StudentLaser.o
+
+# target to build an object file
+src/ships/StudentLaser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o
+.PHONY : src/ships/StudentLaser.cpp.o
+
+src/ships/StudentLaser.i: src/ships/StudentLaser.cpp.i
+.PHONY : src/ships/StudentLaser.i
+
+# target to preprocess a source file
+src/ships/StudentLaser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.i
+.PHONY : src/ships/StudentLaser.cpp.i
+
+src/ships/StudentLaser.s: src/ships/StudentLaser.cpp.s
+.PHONY : src/ships/StudentLaser.s
+
+# target to generate assembly for a file
+src/ships/StudentLaser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.s
+.PHONY : src/ships/StudentLaser.cpp.s
+
+src/ships/StudentPlayer.o: src/ships/StudentPlayer.cpp.o
+.PHONY : src/ships/StudentPlayer.o
+
+# target to build an object file
+src/ships/StudentPlayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o
+.PHONY : src/ships/StudentPlayer.cpp.o
+
+src/ships/StudentPlayer.i: src/ships/StudentPlayer.cpp.i
+.PHONY : src/ships/StudentPlayer.i
+
+# target to preprocess a source file
+src/ships/StudentPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.i
+.PHONY : src/ships/StudentPlayer.cpp.i
+
+src/ships/StudentPlayer.s: src/ships/StudentPlayer.cpp.s
+.PHONY : src/ships/StudentPlayer.s
+
+# target to generate assembly for a file
+src/ships/StudentPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceGame.dir/build.make CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.s
+.PHONY : src/ships/StudentPlayer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -405,6 +549,9 @@ help:
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
+	@echo "... src/GameOverScreen.o"
+	@echo "... src/GameOverScreen.i"
+	@echo "... src/GameOverScreen.s"
 	@echo "... src/TitleScreen.o"
 	@echo "... src/TitleScreen.i"
 	@echo "... src/TitleScreen.s"
@@ -417,6 +564,9 @@ help:
 	@echo "... src/graphics/Mesh.o"
 	@echo "... src/graphics/Mesh.i"
 	@echo "... src/graphics/Mesh.s"
+	@echo "... src/graphics/ParticleExplosion.o"
+	@echo "... src/graphics/ParticleExplosion.i"
+	@echo "... src/graphics/ParticleExplosion.s"
 	@echo "... src/graphics/Renderer3D.o"
 	@echo "... src/graphics/Renderer3D.i"
 	@echo "... src/graphics/Renderer3D.s"
@@ -429,12 +579,24 @@ help:
 	@echo "... src/ships/Enemy.o"
 	@echo "... src/ships/Enemy.i"
 	@echo "... src/ships/Enemy.s"
+	@echo "... src/ships/Laser.o"
+	@echo "... src/ships/Laser.i"
+	@echo "... src/ships/Laser.s"
 	@echo "... src/ships/Player.o"
 	@echo "... src/ships/Player.i"
 	@echo "... src/ships/Player.s"
 	@echo "... src/ships/Ship.o"
 	@echo "... src/ships/Ship.i"
 	@echo "... src/ships/Ship.s"
+	@echo "... src/ships/StudentEnemy.o"
+	@echo "... src/ships/StudentEnemy.i"
+	@echo "... src/ships/StudentEnemy.s"
+	@echo "... src/ships/StudentLaser.o"
+	@echo "... src/ships/StudentLaser.i"
+	@echo "... src/ships/StudentLaser.s"
+	@echo "... src/ships/StudentPlayer.o"
+	@echo "... src/ships/StudentPlayer.i"
+	@echo "... src/ships/StudentPlayer.s"
 .PHONY : help
 
 

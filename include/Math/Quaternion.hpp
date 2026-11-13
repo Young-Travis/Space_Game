@@ -12,9 +12,7 @@ struct Quaternion {
     float z{};
 
     static Quaternion fromAxisAngle(const Vector3& axis, float angle) {
-        const float axisLength = std::sqrt(
-            axis.x * axis.x + axis.y * axis.y + axis.z * axis.z
-        );
+        const float axisLength = std::sqrt(axis.x * axis.x + axis.y * axis.y + axis.z * axis.z);
         if (axisLength == 0.0f) {
             return {};
         }

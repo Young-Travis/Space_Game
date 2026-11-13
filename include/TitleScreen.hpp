@@ -25,6 +25,7 @@ public:
     void handleEvent(const sf::Event& event);
     void update(float deltaTime);
     void render(sf::RenderWindow& window);
+    void reset();
 
     Result getResult() const;
 

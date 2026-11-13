@@ -70,11 +70,7 @@ Where:
 
 This works for both 3D positions and the depth calculation.
 */
-std::vector<Vector3> clipPolygon(
-    const std::vector<Vector3>& polygon,
-    float cameraDistance,
-    float nearPlane
-) {
+std::vector<Vector3> clipPolygon(const std::vector<Vector3>& polygon, float cameraDistance, float nearPlane) {
     std::vector<Vector3> clipped;
 
     if (polygon.empty()) {
@@ -179,14 +175,7 @@ non-negative, allowing a small floating-point tolerance.
 This lets us interpolate other properties, such as depth.
 */
 
-void rasterizeTriangle(
-    const Renderer3D::ProjectedPoint& a,
-    const Renderer3D::ProjectedPoint& b,
-    const Renderer3D::ProjectedPoint& c,
-    unsigned int width,
-    unsigned int height,
-    std::vector<float>& depthBuffer
-) {
+void rasterizeTriangle(const Renderer3D::ProjectedPoint& a, const Renderer3D::ProjectedPoint& b, const Renderer3D::ProjectedPoint& c, unsigned int width, unsigned int height, std::vector<float>& depthBuffer) {
     // Extract the projected 2D coordinates of the triangle.
     // The original geometry exists in 3D, but rasterization
     // operates on the 2D screen after projection.
@@ -402,15 +391,7 @@ If the edge is closer, it is visible.
 Visible consecutive samples are grouped into line segments.
 */
 
-void drawDepthTestedEdge(
-    sf::RenderTarget& target,
-    const Renderer3D::ProjectedPoint& a,
-    const Renderer3D::ProjectedPoint& b,
-    unsigned int width,
-    unsigned int height,
-    const std::vector<float>& depthBuffer,
-    const sf::Color& color
-) {
+void drawDepthTestedEdge(sf::RenderTarget& target, const Renderer3D::ProjectedPoint& a, const Renderer3D::ProjectedPoint& b, unsigned int width, unsigned int height, const std::vector<float>& depthBuffer, const sf::Color& color) {
     // Calculate the 2D direction vector from endpoint A to B.
     //
     // In vector notation:
@@ -607,10 +588,7 @@ void drawDepthTestedEdge(
 
 }
 
-Renderer3D::Renderer3D(
-    unsigned int,
-    unsigned int height
-)
+Renderer3D::Renderer3D(unsigned int, unsigned int height)
     : focalLength(static_cast<float>(height) * 0.82f),
       nearPlane(0.12f) {
 }
@@ -682,17 +660,7 @@ Rendering pipeline:
 HSR
 */
 
-Renderer3D::DepthBuffer Renderer3D::buildDepthBuffer(
-    const sf::RenderTarget& target,
-    const Mesh& mesh,
-    float yaw,
-    float pitch,
-    float roll,
-    const sf::Vector2f& screenCenter,
-    float scale,
-    float cameraDistance,
-    const Vector3& translation
-) const {
+Renderer3D::DepthBuffer Renderer3D::buildDepthBuffer(const sf::RenderTarget& target, const Mesh& mesh, float yaw, float pitch, float roll, const sf::Vector2f& screenCenter, float scale, float cameraDistance, const Vector3& translation) const {
     const sf::Vector2u targetSize = target.getSize();
     const unsigned int width = targetSize.x;
     const unsigned int height = targetSize.y;
@@ -749,12 +717,7 @@ Renderer3D::DepthBuffer Renderer3D::buildDepthBuffer(
         projected.reserve(polygon.size());
 
         for (const Vector3& point : polygon) {
-            ProjectedPoint projectedPoint = project(
-                point,
-                screenCenter,
-                scale,
-                cameraDistance
-            );
+            ProjectedPoint projectedPoint = project(point, screenCenter, scale, cameraDistance);
             if (!projectedPoint.visible) {
                 projected.clear();
                 break;
@@ -763,24 +726,14 @@ Renderer3D::DepthBuffer Renderer3D::buildDepthBuffer(
         }
 
         for (std::size_t i = 1; i + 1 < projected.size(); ++i) {
-            rasterizeTriangle(
-                projected[0],
-                projected[i],
-                projected[i + 1],
-                width,
-                height,
-                depthBuffer.reciprocalDepth
-            );
+            rasterizeTriangle(projected[0], projected[i], projected[i + 1], width, height, depthBuffer.reciprocalDepth);
         }
     }
 
     return depthBuffer;
 }
 
-bool Renderer3D::DepthBuffer::isPointVisible(
-    const sf::Vector2f& position,
-    float depth
-) const {
+bool Renderer3D::DepthBuffer::isPointVisible(const sf::Vector2f& position, float depth) const {
     if (depth <= 0.0f) {
         return false;
     }
@@ -814,18 +767,7 @@ bool Renderer3D::DepthBuffer::isPointVisible(
     return inversePointDepth + tolerance >= surfaceDepth;
 }
 
-void Renderer3D::drawMeshEdges(
-    sf::RenderTarget& target,
-    const Mesh& mesh,
-    float yaw,
-    float pitch,
-    float roll,
-    const sf::Vector2f& screenCenter,
-    float scale,
-    float cameraDistance,
-    const DepthBuffer& depthBuffer,
-    const Vector3& translation
-) const {
+void Renderer3D::drawMeshEdges(sf::RenderTarget& target, const Mesh& mesh, float yaw, float pitch, float roll, const sf::Vector2f& screenCenter, float scale, float cameraDistance, const DepthBuffer& depthBuffer, const Vector3& translation) const {
     if (depthBuffer.width == 0 || depthBuffer.height == 0) {
         return;
     }
@@ -882,44 +824,15 @@ void Renderer3D::drawMeshEdges(
             continue;
         }
 
-        drawDepthTestedEdge(
-            target,
-            projectedA,
-            projectedB,
-            depthBuffer.width,
-            depthBuffer.height,
-            depthBuffer.reciprocalDepth,
-            lineColor
-        );
+        drawDepthTestedEdge(target, projectedA, projectedB, depthBuffer.width, depthBuffer.height, depthBuffer.reciprocalDepth, lineColor);
     }
 }
 
-void Renderer3D::drawMesh(
-    sf::RenderTarget& target,
-    const Mesh& mesh,
-    float yaw,
-    float pitch,
-    float roll,
-    const sf::Vector2f& screenCenter,
-    float scale,
-    float cameraDistance,
-    const Vector3& translation
-) const {
-    const DepthBuffer depthBuffer = buildDepthBuffer(
-        target, mesh, yaw, pitch, roll, screenCenter, scale, cameraDistance,
-        translation
-    );
-    drawMeshEdges(
-        target, mesh, yaw, pitch, roll, screenCenter, scale, cameraDistance,
-        depthBuffer, translation
-    );
+void Renderer3D::drawMesh(sf::RenderTarget& target, const Mesh& mesh, float yaw, float pitch, float roll, const sf::Vector2f& screenCenter, float scale, float cameraDistance, const Vector3& translation) const {
+    const DepthBuffer depthBuffer = buildDepthBuffer(target, mesh, yaw, pitch, roll, screenCenter, scale, cameraDistance, translation);
+    drawMeshEdges(target, mesh, yaw, pitch, roll, screenCenter, scale, cameraDistance, depthBuffer, translation);
 }
 
-Renderer3D::ProjectedPoint Renderer3D::projectPoint(
-    const Vector3& point,
-    const sf::Vector2f& screenCenter,
-    float scale,
-    float cameraDistance
-) const {
+Renderer3D::ProjectedPoint Renderer3D::projectPoint(const Vector3& point, const sf::Vector2f& screenCenter, float scale, float cameraDistance) const {
     return project(point, screenCenter, scale, cameraDistance);
 }

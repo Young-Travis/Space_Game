@@ -4,13 +4,19 @@ SpaceGame: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
   CMakeFiles/SpaceGame.dir/src/main.cpp.o \
   CMakeFiles/SpaceGame.dir/src/Game.cpp.o \
+  CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o \
   CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o \
   CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o \
   CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o \
   CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o \
+  CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o \
   CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o \
   CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o \
+  CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o \
   CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o \
+  CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o \
+  CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o \
+  CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o \
   CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o \
   CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o \
   /usr/lib/libsfml-graphics.so.3.1.0 \
@@ -98,6 +104,8 @@ CMakeFiles/SpaceGame.dir/src/main.cpp.o:
 
 CMakeFiles/SpaceGame.dir/src/Game.cpp.o:
 
+CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o:
+
 CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o:
 
 CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o:
@@ -106,11 +114,21 @@ CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o:
 
 CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o:
 
+CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o:
+
 CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o:
 
 CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o:
 
+CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o:
+
 CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o:
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o:
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o:
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o:
 
 CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o:
 

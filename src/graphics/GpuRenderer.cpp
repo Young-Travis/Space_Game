@@ -2,6 +2,7 @@
 
 #include <SFML/OpenGL.hpp>
 
+#include <algorithm>
 #include <cmath>
 
 namespace {
@@ -13,17 +14,16 @@ void applyTranslation(const Vector3& translation) {
     glTranslatef(translation.x, translation.y, translation.z);
 }
 
-void applyViewRotation(const Quaternion& orientation) {
-    const Quaternion view = orientation.inverse();
-    const float xx = view.x * view.x;
-    const float yy = view.y * view.y;
-    const float zz = view.z * view.z;
-    const float xy = view.x * view.y;
-    const float xz = view.x * view.z;
-    const float yz = view.y * view.z;
-    const float wx = view.w * view.x;
-    const float wy = view.w * view.y;
-    const float wz = view.w * view.z;
+void applyRotation(const Quaternion& orientation) {
+    const float xx = orientation.x * orientation.x;
+    const float yy = orientation.y * orientation.y;
+    const float zz = orientation.z * orientation.z;
+    const float xy = orientation.x * orientation.y;
+    const float xz = orientation.x * orientation.z;
+    const float yz = orientation.y * orientation.z;
+    const float wx = orientation.w * orientation.x;
+    const float wy = orientation.w * orientation.y;
+    const float wz = orientation.w * orientation.z;
     const float rotation[16] = {
         1.0f - 2.0f * (yy + zz), 2.0f * (xy + wz), 2.0f * (xz - wy), 0.0f,
         2.0f * (xy - wz), 1.0f - 2.0f * (xx + zz), 2.0f * (yz + wx), 0.0f,
@@ -32,12 +32,13 @@ void applyViewRotation(const Quaternion& orientation) {
     };
     glMultMatrixf(rotation);
 }
+
+void applyViewRotation(const Quaternion& orientation) {
+    applyRotation(orientation.inverse());
+}
 }
 
-void GpuRenderer::beginFrame(
-    const sf::Vector2u& targetSize,
-    float cameraDistance
-) const {
+void GpuRenderer::beginFrame(const sf::Vector2u& targetSize, float cameraDistance) const {
     const float width = static_cast<float>(targetSize.x);
     const float height = static_cast<float>(targetSize.y);
     if (width <= 0.0f || height <= 0.0f) {
@@ -51,14 +52,7 @@ void GpuRenderer::beginFrame(
     glViewport(0, 0, targetSize.x, targetSize.y);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glFrustum(
-        -halfWidth,
-        halfWidth,
-        -halfHeight,
-        halfHeight,
-        NEAR_PLANE,
-        FAR_PLANE
-    );
+    glFrustum(-halfWidth, halfWidth, -halfHeight, halfHeight, NEAR_PLANE, FAR_PLANE);
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
@@ -76,20 +70,19 @@ void GpuRenderer::beginFrame(
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
-void GpuRenderer::beginWorldView(
-    float cameraDistance,
-    const Quaternion& shipOrientation
-) const {
+void GpuRenderer::beginWorldView(float cameraDistance, const Quaternion& shipOrientation, const Vector3& cameraShake) const {
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     glTranslatef(0.0f, 0.0f, -cameraDistance);
     applyViewRotation(shipOrientation);
+    glTranslatef(cameraShake.x, cameraShake.y, cameraShake.z);
 }
 
-void GpuRenderer::beginCockpitView(float cameraDistance) const {
+void GpuRenderer::beginCockpitView(float cameraDistance, const Vector3& cameraShake) const {
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     glTranslatef(0.0f, 0.0f, -cameraDistance);
+    glTranslatef(cameraShake.x, cameraShake.y, cameraShake.z);
 }
 
 void GpuRenderer::beginDepthPass() const {
@@ -97,12 +90,10 @@ void GpuRenderer::beginDepthPass() const {
     glDepthMask(GL_TRUE);
 }
 
-void GpuRenderer::drawMeshDepth(
-    const Mesh& mesh,
-    const Vector3& translation
-) const {
+void GpuRenderer::drawMeshDepth(const Mesh& mesh, const Vector3& translation, const Quaternion& orientation) const {
     glPushMatrix();
     applyTranslation(translation);
+    applyRotation(orientation);
 
     const std::vector<Vector3>& vertices = mesh.getVertices();
     for (const Face& face : mesh.getFaces()) {
@@ -145,13 +136,35 @@ void GpuRenderer::drawStars(const std::vector<Vector3>& stars) const {
     glEnd();
 }
 
-void GpuRenderer::drawMeshEdges(
-    const Mesh& mesh,
-    const Vector3& translation,
-    sf::Color color
-) const {
+void GpuRenderer::drawLaser(const Vector3& start, const Vector3& end, sf::Color color) const {
+    glColor3ub(color.r, color.g, color.b);
+    glLineWidth(3.0f);
+    glBegin(GL_LINES);
+    glVertex3f(start.x, start.y, start.z);
+    glVertex3f(end.x, end.y, end.z);
+    glEnd();
+    glLineWidth(1.0f);
+}
+
+void GpuRenderer::drawExplosionParticles(const std::vector<ExplosionParticle>& particles) const {
+    glPointSize(2.0f);
+    glBegin(GL_POINTS);
+    for (const ExplosionParticle& particle : particles) {
+        if (particle.lifetime <= 0.0f || particle.maxLifetime <= 0.0f) {
+            continue;
+        }
+
+        glColor3ub(255, 255, 255);
+        glVertex3f(particle.position.x, particle.position.y, particle.position.z);
+    }
+    glEnd();
+    glPointSize(2.0f);
+}
+
+void GpuRenderer::drawMeshEdges(const Mesh& mesh, const Vector3& translation, sf::Color color, const Quaternion& orientation) const {
     glPushMatrix();
     applyTranslation(translation);
+    applyRotation(orientation);
     glColor3ub(color.r, color.g, color.b);
     glBegin(GL_LINES);
 

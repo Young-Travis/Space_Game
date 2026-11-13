@@ -100,10 +100,24 @@ CMakeFiles/SpaceGame.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SpaceGame.dir/src/Game.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/Game.cpp" -o CMakeFiles/SpaceGame.dir/src/Game.cpp.s
 
+CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
+CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/GameOverScreen.cpp
+CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o -MF CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/GameOverScreen.cpp"
+
+CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/GameOverScreen.cpp" > CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.i
+
+CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/GameOverScreen.cpp" -o CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.s
+
 CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
 CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/TitleScreen.cpp
 CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o -MF CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/TitleScreen.cpp"
 
 CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.s: cmake_force
 CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
 CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/graphics/Mesh.cpp
 CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o -MF CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/graphics/Mesh.cpp"
 
 CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.s: cmake_force
 CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
 CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/graphics/Renderer3D.cpp
 CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o -MF CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/graphics/Renderer3D.cpp"
 
 CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.s: cmake_force
 CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
 CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/graphics/GpuRenderer.cpp
 CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o -MF CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/graphics/GpuRenderer.cpp"
 
 CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.i: cmake_force
@@ -156,10 +170,24 @@ CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/graphics/GpuRenderer.cpp" -o CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.s
 
+CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
+CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/graphics/ParticleExplosion.cpp
+CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o -MF CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/graphics/ParticleExplosion.cpp"
+
+CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/graphics/ParticleExplosion.cpp" > CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.i
+
+CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/graphics/ParticleExplosion.cpp" -o CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.s
+
 CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
 CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/graphics/Starfield.cpp
 CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o -MF CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/graphics/Starfield.cpp"
 
 CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.i: cmake_force
@@ -173,7 +201,7 @@ CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.s: cmake_force
 CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
 CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/ships/Enemy.cpp
 CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o -MF CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/Enemy.cpp"
 
 CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.i: cmake_force
@@ -184,10 +212,24 @@ CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/Enemy.cpp" -o CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.s
 
+CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
+CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/ships/Laser.cpp
+CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o -MF CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/Laser.cpp"
+
+CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/Laser.cpp" > CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.i
+
+CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/Laser.cpp" -o CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.s
+
 CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
 CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/ships/Player.cpp
 CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o -MF CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/Player.cpp"
 
 CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.i: cmake_force
@@ -198,10 +240,52 @@ CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/Player.cpp" -o CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.s
 
+CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
+CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/ships/StudentEnemy.cpp
+CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o -MF CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/StudentEnemy.cpp"
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/StudentEnemy.cpp" > CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.i
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/StudentEnemy.cpp" -o CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.s
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
+CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/ships/StudentLaser.cpp
+CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o -MF CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/StudentLaser.cpp"
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/StudentLaser.cpp" > CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.i
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/StudentLaser.cpp" -o CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.s
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
+CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/ships/StudentPlayer.cpp
+CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o -MF CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/StudentPlayer.cpp"
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/StudentPlayer.cpp" > CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.i
+
+CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/StudentPlayer.cpp" -o CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.s
+
 CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
 CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/ships/Ship.cpp
 CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o -MF CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/ships/Ship.cpp"
 
 CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.i: cmake_force
@@ -215,7 +299,7 @@ CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.s: cmake_force
 CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o: CMakeFiles/SpaceGame.dir/flags.make
 CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o: /mnt/HolyHDD/Code\ Files/C++/Game\ stuff\ for\ school/SpaceGame/src/cockpit/cockpit.cpp
 CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o: CMakeFiles/SpaceGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o -MF CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o.d -o CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o -c "/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/src/cockpit/cockpit.cpp"
 
 CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.i: cmake_force
@@ -230,13 +314,19 @@ CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.s: cmake_force
 SpaceGame_OBJECTS = \
 "CMakeFiles/SpaceGame.dir/src/main.cpp.o" \
 "CMakeFiles/SpaceGame.dir/src/Game.cpp.o" \
+"CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o" \
 "CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o" \
 "CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o" \
 "CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o" \
 "CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o" \
+"CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o" \
 "CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o" \
 "CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o" \
+"CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o" \
 "CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o" \
+"CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o" \
+"CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o" \
+"CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o" \
 "CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o" \
 "CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o"
 
@@ -245,13 +335,19 @@ SpaceGame_EXTERNAL_OBJECTS =
 
 SpaceGame: CMakeFiles/SpaceGame.dir/src/main.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/src/Game.cpp.o
+SpaceGame: CMakeFiles/SpaceGame.dir/src/GameOverScreen.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/src/TitleScreen.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/src/graphics/Mesh.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/src/graphics/Renderer3D.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/src/graphics/GpuRenderer.cpp.o
+SpaceGame: CMakeFiles/SpaceGame.dir/src/graphics/ParticleExplosion.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/src/graphics/Starfield.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/src/ships/Enemy.cpp.o
+SpaceGame: CMakeFiles/SpaceGame.dir/src/ships/Laser.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/src/ships/Player.cpp.o
+SpaceGame: CMakeFiles/SpaceGame.dir/src/ships/StudentEnemy.cpp.o
+SpaceGame: CMakeFiles/SpaceGame.dir/src/ships/StudentLaser.cpp.o
+SpaceGame: CMakeFiles/SpaceGame.dir/src/ships/StudentPlayer.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/src/ships/Ship.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/src/cockpit/cockpit.cpp.o
 SpaceGame: CMakeFiles/SpaceGame.dir/build.make
@@ -262,7 +358,7 @@ SpaceGame: /usr/lib/libsfml-system.so.3.1.0
 SpaceGame: /usr/lib/libGLX.so
 SpaceGame: /usr/lib/libOpenGL.so
 SpaceGame: CMakeFiles/SpaceGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable SpaceGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/HolyHDD/Code Files/C++/Game stuff for school/SpaceGame/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable SpaceGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SpaceGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
